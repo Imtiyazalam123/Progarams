@@ -1,0 +1,26 @@
+package com.imtiyaz;
+
+public class StrongNo {
+
+	public static void main(String[] args) {
+		
+		int a = 1;
+		int b = 100;
+		
+		int org = a;
+		int factSum = 0;
+		int rem = a % 10;
+		factSum = factSum + factorial(rem);
+
+	}
+	public static int factorial(int n) {
+		
+		int f = 1;
+		while (n > 0) {
+			f = f * n;
+			n--;
+		}
+		return f;
+	}
+
+}

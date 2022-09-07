@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		
+		 
+	     List<Integer> list = new ArrayList<Integer>();
+	     list.add(121);
+	     list add(1422);
+	     list.add(141);
+
+	     for(Integer i : list) {
+
+		bolean b = isPalindrom(i);
+		if(b)
+		 s.o.pln(i + " is Palindrom no.")
+		else 
+		  s.o.pln(i + " is not Palindrom no.");
+	    }
+	}
+
+}
+//create table emp(id int(20), emp_firstName varchar(100), emp_lastName varchar(100), emp_address varchar(200));
+
+// select name from emp where name like 'a%';

@@ -1,0 +1,17 @@
+package com.test;
+
+class Student {
+	
+	int id;
+	float cgpa;
+	String firstName;
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

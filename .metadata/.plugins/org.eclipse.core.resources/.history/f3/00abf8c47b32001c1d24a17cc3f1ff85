@@ -1,0 +1,15 @@
+package com.imtiyaz;
+
+import java.util.Scanner;
+
+public class StrongNumber {
+
+	public static void main(String[] args) {
+		
+		int n;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter the Number");
+		n = in.nextInt();
+	}
+
+}

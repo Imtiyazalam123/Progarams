@@ -1,0 +1,47 @@
+package com.test;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+class Student implements Comparable<Student> {
+	
+	int id;
+	float cgpa;
+	String firstName;
+	
+	public String toString() {
+		
+		return "id = "+id+" Name = "+firstName+" cgpa = "+cgpa;
+	}
+
+	@Override
+	public int compareTo(Student o) {
+		Float f = this.cgpa;
+		return f.compareTo(o.cgpa);
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of students");
+		int n = sc.nextInt();
+		
+		ArrayList<Student> al = new ArrayList<Student>();
+		for(int i = 1; i <= n; i++) {
+		
+			Student s = new Student();
+			System.out.println("Enter the sudetn id : ");
+			s.id = sc.nextInt();
+			System.out.println("Enter the sudetn CPGA : ");
+			s.cgpa = sc.nextFloat();
+			System.out.println("Enter the first name : ");
+			s.firstName = sc.next().toLowerCase();
+			al.add(s);
+		}
+		Collections.sort(al);
+		for(Student s : al) {
+			
+		}
+	}
+}

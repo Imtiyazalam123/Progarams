@@ -1,0 +1,19 @@
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		
+		String name = "imtiyaz";
+		String newString = "";
+		for(int i = name.length()-1; i >= 0; i--) {
+			
+			newString = newString+name.charAt(i);
+		}
+		System.out.println(newString);
+	}
+
+	
+//create table emp(id int(20), emp_firstName varchar(100), emp_lastName varchar(100), emp_address varchar(200));
+}
+
+// select name from emp where name like 'a%';

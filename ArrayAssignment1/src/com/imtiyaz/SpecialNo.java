@@ -1,0 +1,40 @@
+package com.imtiyaz;
+
+public class SpecialNo {
+
+	public static boolean isSpecial(int n) {
+		boolean b =  false;
+		int org = n;
+		int add = 0;
+		int mul = 1;
+		while(n > 0) {
+				int last = n % 10;
+				add = add + last;
+				mul = mul * last;
+				n = n / 10;
+		}
+		if(org == (add + mul))
+			b = true;
+		return b;
+	}
+	public static void main(String[] args) {
+			int special[] = new int[100];
+			int i = 11;
+			int k = 0;
+			while(i < 100) {
+					
+					if(isSpecial(i)) {
+						special[k] = i;
+						k++;
+					}
+						
+					i++;
+			}
+	
+			for(int j = 0; j < k; j++) {
+				System.out.print(special[j]+", ");
+			}
+			
+	}
+
+}
